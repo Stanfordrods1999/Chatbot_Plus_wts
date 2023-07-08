@@ -18,3 +18,4 @@ geonamescache==1.6.0
 spacy==3.5.4
 requests==2.27.1
 geocoder==1.38.1
+numpy==1.23.5
