@@ -1,5 +1,6 @@
 import Intent_Recognition as ir 
 import streamlit as st
+st.set_page_config(page_title="Chatbot Plus", page_icon=":fire:",initial_sidebar_state="collapsed",layout="centered")
 from streamlit_chat import message
 import Conversational as cs
 import DoFunctionality as df
@@ -15,7 +16,6 @@ if "Functionality" not in st.session_state:
     st.session_state.initialize = True
     st.session_state.dataset = []
     
-st.set_page_config(page_title="Chatbot Plus", page_icon=":fire:",initial_sidebar_state="collapsed",layout="centered")
 app_modes = ['About App','ChatBot','Map']
 app_select = st.sidebar.selectbox("Choose the App Mode", app_modes)
 if app_select ==  "About App":
