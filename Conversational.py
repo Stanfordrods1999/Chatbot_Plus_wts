@@ -4,10 +4,12 @@ import tensorflow as tf
 import tflearn 
 import random 
 import nltk
+nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
 import numpy as np
 
 stemmer  = LancasterStemmer()
+
 
 data = pickle.load( open( "training_data", "rb" ) )
 words = data['words']
