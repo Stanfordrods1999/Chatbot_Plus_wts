@@ -7,6 +7,7 @@ import nltk
 nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
 import numpy as np
+import streamlit as st
 
 stemmer  = LancasterStemmer()
 
@@ -21,16 +22,22 @@ with open('intents.json') as json_data:
     intents = json.load(json_data)
 
 tf.compat.v1.reset_default_graph()
-# Build neural network
-net = tflearn.input_data(shape=[None, len(train_x[0])])
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, len(train_y[0]), activation='softmax')
-net = tflearn.regression(net)
 
-# Define model and setup tensorboard
-model = tflearn.DNN(net, tensorboard_dir='tflearn_logs')
-model.load('./tflearn_model/model.tflearn')
+@st.cache_resource
+def load_data():
+    # Build neural network
+    net = tflearn.input_data(shape=[None, len(train_x[0])])
+    net = tflearn.fully_connected(net, 8)
+    net = tflearn.fully_connected(net, 8)
+    net = tflearn.fully_connected(net, len(train_y[0]), activation='softmax')
+    net = tflearn.regression(net)
+    
+    # Define model and setup tensorboard
+    model = tflearn.DNN(net, tensorboard_dir='tflearn_logs')
+    model.load('./tflearn_model/model.tflearn')
+    return model
+
+model = load_data()
 
 def clean_up_sentence(sentence):
     # tokenize the pattern
