@@ -1,0 +1,71 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+     "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {"tag": "hours",
+     "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+     "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+    },
+    {"tag": "jokes",
+    "patterns": ["Tell me a joke","Do you know any funny jokes?","I could use a good laugh","Can you share a joke with me?"],
+    "responses": ["Why don't scientists trust atoms? Because they make up everything!","Why don't skeletons fight each other? They don't have the guts!",
+          "Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them!","Why did the scarecrow win an award? Because he was outstanding in his field!",
+          "What did one wall say to the other wall? I'll meet you at the corner!"]
+      }
+      ,
+    {"tag": "payments",
+     "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+     "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+    },
+    {"tag": "opentoday",
+     "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+     "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+    },
+    {
+        "tag": "help",
+        "patterns": [
+          "I need assistance",
+          "Can you help me?",
+          "I'm looking for some help",
+          "Could you lend a hand?",
+          "I have a question",
+          "I'm stuck and need guidance"
+        ],
+        "responses": [
+          "Of course! I'm here to help. What do you need assistance with?",
+          "I'm here to assist you. Please let me know how I can help.",
+          "Don't worry, I'll do my best to help you. What can I do for you?",
+          "Sure, I'll be glad to lend a hand. What's the issue or question?",
+          "I'm ready to assist you. Feel free to ask me anything you need help with.",
+          "No problem, I'm here to provide guidance and support. How can I assist you?"
+        ]
+    },
+    {
+        "tag": "about app",
+        "patterns": [
+          "Tell me about the app",
+          "What is this app about?",
+          "Can you provide an overview of the app?",
+          "I want to know more about the app",
+          "How does the app work?",
+          "What features does the app have?"
+        ],
+        "responses": [
+          "Our app is designed to simplify your daily tasks and increase productivity. It offers a user-friendly interface that represents a chatbot ,along with that this app is made to handle certain functionalities like book your restaurant for you , play some songs for you and add these songs to a playlist.",
+          "Our app aims to enhance your daily productivity by providing a user-friendly interface centered around a chatbot. Additionally, it offers convenient features such as booking restaurants, playing songs, and creating playlists.",
+          "Experience the ultimate convenience with our app, designed to streamline your daily tasks and boost productivity. Its intuitive chatbot interface enables effortless restaurant bookings, song playback, and playlist creation.",
+          "Looking for a smarter way to manage your daily tasks? Our app has got you covered! Featuring an intuitive chatbot interface, it simplifies restaurant bookings, lets you enjoy your favorite songs, and even creates personalized playlists.",
+          "Discover a new level of efficiency with our app, designed to optimize your daily routines. With a user-friendly chatbot interface, it seamlessly handles tasks like restaurant reservations, music playback, and playlist curation."
+        ]
+    }      
+]
+}
