@@ -53,7 +53,6 @@ import nltk
 import geonamescache
 from geopy.geocoders import Nominatim 
 from spacy import load
-from bs4 import BeautifulSoup
 import requests
 import pandas as pd 
 
