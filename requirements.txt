@@ -16,6 +16,7 @@ yake==0.4.8
 geopy==2.3.0
 geonamescache==1.6.0
 spacy==3.5.4
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
 requests==2.27.1
 geocoder==1.38.1
 numpy==1.23.5
