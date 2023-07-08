@@ -1,6 +1,6 @@
-import Intent_Recognition as ir 
 import streamlit as st
 st.set_page_config(page_title="Chatbot Plus", page_icon=":fire:",initial_sidebar_state="collapsed",layout="centered")
+import Intent_Recognition as ir 
 from streamlit_chat import message
 import Conversational as cs
 import DoFunctionality as df
