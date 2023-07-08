@@ -16,6 +16,7 @@ from tqdm import tqdm
 #from tensorflow.keras import backend as K
 import tensorflow as tf
 import tensorflow_hub as hub
+import streamlit as st
 
 class BertModel(object):
     def __init__(self):
@@ -76,9 +77,11 @@ class BertModel(object):
         
         return tensor
 
-bert_obj_model = BertModel()
-
-model = tf.keras.models.load_model('saved_model')
+@st.cache_resource
+def load_model():
+    bert_obj_model = BertModel()
+    model = tf.keras.models.load_model('saved_model')    
+    return model,bert_obj_model   
 
 pred_number = 0
 
