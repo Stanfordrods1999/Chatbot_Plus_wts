@@ -12,3 +12,5 @@ streamlit==1.23.1
 streamlit-chat==0.1.1
 streamlit-folium==0.12.0
 nltk==3.8.1
+yake==0.4.8
+geopy==2.3.0
