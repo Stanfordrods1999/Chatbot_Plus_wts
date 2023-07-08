@@ -83,6 +83,8 @@ def load_model():
     model = tf.keras.models.load_model('saved_model')    
     return model,bert_obj_model   
 
+model,bert_obj_model = load_model()
+
 pred_number = 0
 
 def prediction(sentence:str):
