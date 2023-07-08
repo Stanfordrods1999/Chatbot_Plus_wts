@@ -16,3 +16,4 @@ yake==0.4.8
 geopy==2.3.0
 geonamescache==1.6.0
 spacy==3.5.4
+requests==2.27.1
