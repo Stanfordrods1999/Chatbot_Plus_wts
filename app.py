@@ -12,6 +12,7 @@ import pandas as pd
 import requests
 
 if "Functionality" not in st.session_state:
+    st.cache_resource.clear()
     st.session_state.Functionality = False
     st.session_state.initialize = True
     st.session_state.dataset = []
