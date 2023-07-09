@@ -23,7 +23,7 @@ with open('intents.json') as json_data:
 
 tf.compat.v1.reset_default_graph()
 
-@st.cache_resource(max_entries=1)
+@st.cache_resource(max_entries=2)
 def load_data():
     # Build neural network
     net = tflearn.input_data(shape=[None, len(train_x[0])])
