@@ -77,7 +77,7 @@ class BertModel(object):
         
         return tensor
 
-@st.cache(max_entries=1)
+@st.cache_resource()
 def load_model():
     bert_obj_model = BertModel()
     model = tf.keras.models.load_model('saved_model')    
