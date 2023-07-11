@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config(page_title="Chatbot Plus", page_icon=":fire:",initial_sidebar_state="collapsed",layout="centered")
+st.set_page_config(page_title="Chatbot Plus", page_icon=":fire:",layout="wide")
 import Intent_Recognition as ir 
 from streamlit_chat import message
 import Conversational as cs
@@ -10,15 +10,33 @@ from geopy.geocoders import Nominatim
 from streamlit_folium import st_folium, folium_static
 import pandas as pd 
 import requests
+from st_on_hover_tabs import on_hover_tabs
 
 if "Functionality" not in st.session_state:
     st.cache_resource.clear()
     st.session_state.Functionality = False
     st.session_state.initialize = True
     st.session_state.dataset = []
-    
-app_modes = ['About App','ChatBot','Map']
-app_select = st.sidebar.selectbox("Choose the App Mode", app_modes)
+
+st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
+with st.sidebar:
+    app_select = on_hover_tabs(tabName=['About Name', 'ChatBot', 'Map'],
+                         iconName=['info', 'chat', 'map'],
+                         styles = {'navtab': {'background-color':'#111',
+                                              'color': '#818181',
+                                              'font-size': '18px',
+                                              'transition': '.3s',
+                                              'white-space': 'nowrap',
+                                              'text-transform': 'uppercase'},
+                                   'tabOptionsStyle': {':hover :hover': {'color': 'red',
+                                                                  'cursor': 'pointer'}},
+                                   'iconStyle':{'position':'fixed',
+                                                'left':'7.5px',
+                                                'text-align': 'left'},
+                                   'tabStyle' : {'list-style-type': 'none',
+                                                 'margin-bottom': '30px',
+                                                 'padding-left': '30px'}},
+                         key="1")
 if app_select ==  "About App":
     if "paragraph" not in st.session_state:
         file_path = 'text.txt'
