@@ -5,6 +5,7 @@ from streamlit_chat import message
 import Conversational as cs
 import DoFunctionality as df
 import folium 
+import random
 import geocoder
 from geopy.geocoders import Nominatim
 from streamlit_folium import st_folium, folium_static
@@ -19,24 +20,26 @@ if "Functionality" not in st.session_state:
     st.session_state.Functionality = False
     st.session_state.initialize = True
     st.session_state.dataset = []
-    with st.sidebar:
-        app_select = on_hover_tabs(tabName=['About App', 'ChatBot', 'Map'],
-                             iconName=['info', 'chat', 'map'],
-                             styles = {'navtab': {'background-color':'#111',
-                                                  'color': '#818181',
-                                                  'font-size': '18px',
-                                                  'transition': '.3s',
-                                                  'white-space': 'nowrap',
-                                                  'text-transform': 'uppercase'},
-                                       'tabOptionsStyle': {':hover :hover': {'color': 'red',
-                                                                      'cursor': 'pointer'}},
-                                       'iconStyle':{'position':'fixed',
-                                                    'left':'7.5px',
-                                                    'text-align': 'left'},
-                                       'tabStyle' : {'list-style-type': 'none',
-                                                     'margin-bottom': '30px',
-                                                     'padding-left': '30px'}},
-                             key="1",default_choice=0)
+
+with st.sidebar:
+    app_select = on_hover_tabs(tabName=['About App', 'ChatBot', 'Map'],
+                         iconName=['info', 'chat', 'map'],
+                         styles = {'navtab': {'background-color':'#111',
+                                              'color': '#818181',
+                                              'font-size': '18px',
+                                              'transition': '.3s',
+                                              'white-space': 'nowrap',
+                                              'text-transform': 'uppercase'},
+                                   'tabOptionsStyle': {':hover :hover': {'color': 'red',
+                                                                  'cursor': 'pointer'}},
+                                   'iconStyle':{'position':'fixed',
+                                                'left':'7.5px',
+                                                'text-align': 'left'},
+                                   'tabStyle' : {'list-style-type': 'none',
+                                                 'margin-bottom': '30px',
+                                                 'padding-left': '30px'}},
+                         key=str(random.random()),default_choice=0)
+    
 if app_select ==  "About App":
     if "paragraph" not in st.session_state:
         file_path = 'text.txt'
