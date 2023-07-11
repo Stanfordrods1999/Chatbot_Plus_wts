@@ -38,7 +38,7 @@ with st.sidebar:
                                    'tabStyle' : {'list-style-type': 'none',
                                                  'margin-bottom': '30px',
                                                  'padding-left': '30px'}},
-                         key=str(random.random()),default_choice=0)
+                               default_choice=0)
     
 if app_select ==  "About App":
     if "paragraph" not in st.session_state:
