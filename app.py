@@ -20,7 +20,7 @@ if "Functionality" not in st.session_state:
 
 st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
 with st.sidebar:
-    app_select = on_hover_tabs(tabName=['About Name', 'ChatBot', 'Map'],
+    app_select = on_hover_tabs(tabName=['About App', 'ChatBot', 'Map'],
                          iconName=['info', 'chat', 'map'],
                          styles = {'navtab': {'background-color':'#111',
                                               'color': '#818181',
