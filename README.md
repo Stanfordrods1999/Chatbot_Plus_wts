@@ -1,7 +1,7 @@
 
 # Chatbot Plus 
 
-A Chatbot Application,that can also play music, get the nearest restaurants and get the weather using a mix of BERT and RNN.
+A Chatbot Application,that can also play music, get the nearest restaurants and get the weather using BERT.
 
 
 
