@@ -38,15 +38,6 @@ If you have any feedback, please reach out to me at stanfordrods1999@gmail.com
 
 
 
-## Color Reference
+## Link to Website 
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-
-
-
-# Hi, I'm Katherine! 👋
+![:globe_with_meridians: Click here to visit the website](https://chatbotpluswts-vbeic5c8g2.streamlit.app/)
