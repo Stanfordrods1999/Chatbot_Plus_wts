@@ -58,24 +58,11 @@ elif app_select == "ChatBot":
     def on_input_change():
         user_input = st.session_state.user_input
         st.session_state.past.append(user_input)
-        x=cs.response(user_input)
-        if user_input == 'Functionality()':
-            st.session_state.Functionality = True 
-            st.session_state.generated.append("Started Functionality")
-            st.session_state.user_input = ""
-            return ""
-        
-        if user_input == 'StopFunctionality()':
-            st.session_state.Functionality = False
-            st.session_state.generated.append("Functionality Stopped")
-            st.session_state.user_input = ""
-            return ""
-                
+        x=cs.response(user_input)        
         if st.session_state.Functionality:
             _,functionality = ir.prediction(user_input)
             st.session_state.initialize = True if functionality == 4 else False
-            x = df.switchcase(functionality,user_input)
-            
+            x = df.switchcase(functionality,user_input)            
         st.session_state.Check = True
         st.session_state.generated.append(x)
         st.session_state["user_input"] = ""
@@ -92,6 +79,12 @@ elif app_select == "ChatBot":
 
     with st.container():
         st.text_input("User Input:", on_change=on_input_change, key = "user_input")
+        col = st.columns(2)
+        start_functionality = col[0].checkbox("Functionality")
+        if start_functionality:
+            st.session_state.Functionality = True
+        else:
+            st.session_state.Functionality = False
         
 
     exit_control_var = 1;
