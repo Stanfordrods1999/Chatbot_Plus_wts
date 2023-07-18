@@ -40,4 +40,4 @@ If you have any feedback, please reach out to me at stanfordrods1999@gmail.com
 
 ## Link to Website 
 
-:globe_with_meridians: ![Click here to visit the website](https://chatbotpluswts-vbeic5c8g2.streamlit.app/)
+:globe_with_meridians: [Click here to visit the website](https://chatbotpluswts-vbeic5c8g2.streamlit.app/)
