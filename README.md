@@ -12,6 +12,12 @@ A Chatbot Application,that can also play music, get the nearest restaurants and 
  - [Paper summary — BERT: Bidirectional Transformers for Language Understanding](https://medium.com/analytics-vidhya/paper-summary-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-861456fed1f9)
  - [Two minutes NLP — Keyword and keyphrase extraction with KeyBERT](https://medium.com/nlplanet/two-minutes-nlp-keyword-and-keyphrase-extraction-with-keybert-a9994b06a83)
 
+## Features
+
+- :u7533: Intuitive Interface : ChatBot Plus offers an intuitive and user-friendly interface that allows users to interact with the application easily. 
+- :notes: Music Playback: In the enhanced functionality mode, ChatBot Plus can serenade users with their favorite tunes. It can access and play music from a vast collection
+- :sun_behind_large_cloud: Weather Updates: When users want to know the weather outside, ChatBot Plus can fetch real-time weather updates
+- :plate_with_cutlery: Restaurant Finder: In the enhanced mode, ChatBot Plus can assist users in finding nearby restaurants
 
 ## Tech Stack
 
@@ -41,13 +47,6 @@ If you have any feedback, please reach out to me at stanfordrods1999@gmail.com
 | Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
 | Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
-
-## Features
-
-- :u7533: Intuitive Interface : ChatBot Plus offers an intuitive and user-friendly interface that allows users to interact with the application easily. 
-- :notes: Music Playback: In the enhanced functionality mode, ChatBot Plus can serenade users with their favorite tunes. It can access and play music from a vast collection
-- :sun_behind_large_cloud: Weather Updates: When users want to know the weather outside, ChatBot Plus can fetch real-time weather updates
-- :plate_with_cutlery: Restaurant Finder: In the enhanced mode, ChatBot Plus can assist users in finding nearby restaurants
 
 
 # Hi, I'm Katherine! 👋
