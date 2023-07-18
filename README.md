@@ -32,12 +32,16 @@ A Chatbot Application,that can also play music, get the nearest restaurants and 
 ![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHRzZzQyMjQ1NDY1b3FvNzFqY2l0MDYybnN5bGhuYzR3eTY3Z2xwMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OK6QudjWvEVw5gtknE/giphy.gif)
 
 
-## Feedback
-
-If you have any feedback, please reach out to me at stanfordrods1999@gmail.com
-
-
-
 ## Link to Website 
 
  [:globe_with_meridians: Click here to visit the website](https://chatbotpluswts-vbeic5c8g2.streamlit.app/)
+
+
+## Feedback
+
+If you have any feedback, please reach out to me at: 
+:e-mail: stanfordrods1999@gmail.com
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stanford-renald-rodrigues-a1ab95234)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)](https://www.kaggle.com/stanfordrodrigues)
+
+
